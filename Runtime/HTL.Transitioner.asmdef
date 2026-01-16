@@ -1,9 +1,7 @@
 {
     "name": "HTL.Transitioner",
     "rootNamespace": "HTL.Transitioner",
-    "references": [
-        "DOTween.Modules"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
