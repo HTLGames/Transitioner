@@ -1,0 +1,16 @@
+{
+  "name": "com.HTL.Transitioner",
+  "version": "0.0.1",
+  "displayName": "Transitioner",
+  "description": "Unity package to deal with transition animation between visible/hidden states.",
+  "unity": "6000.0",
+  "unityRelease": "58f2",
+  "documentationUrl": "https://github.com/HTLGames/UnityTransitioner/blob/main/README.md",
+  "licensesUrl": "https://github.com/HTLGames/UnityTransitioner/blob/main/LICENSE",
+  "dependencies": {
+ },
+  "author": {
+    "name": "HectorTL",
+    "url": "https://github.com/HTLGames"
+  }
+}
