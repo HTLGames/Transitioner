@@ -1,5 +1,5 @@
 {
-  "name": "com.HTL.Transitioner",
+  "name": "com.htl.transitioner",
   "version": "0.0.1",
   "displayName": "Transitioner",
   "description": "Unity package to deal with transition animation between visible/hidden states.",
