@@ -4,8 +4,6 @@ namespace HTL.Transitioner.Menus
 {
     public class TransitionerMenu : MonoBehaviour
     {
-        [Header("Data")]
-        [SerializeField] private bool disableWhenUnloaded = true;
         [Header("References")]
         [SerializeField] private TransitionerMenuGroup menuGroup;
 
