@@ -28,7 +28,7 @@ namespace HTL.Transitioner.Loading
 
         public void Dispose()
         {
-            loadingScreen.PlayAsync(false).GetAwaiter();
+            loadingScreen.Play(false);
         }
     }
 }
