@@ -2,16 +2,17 @@ using UnityEngine;
 
 namespace HTL.Transitioner.Menus
 {
+    [RequireComponent(typeof(AbstractTransition))]
     public class TransitionerMenu : MonoBehaviour
     {
         [Header("References")]
         [SerializeField] private TransitionerMenuGroup menuGroup;
 
-        ITransition transition;
+        AbstractTransition transition;
 
         void Awake()
         {
-            transition = GetComponent<ITransition>();
+            transition = GetComponent<AbstractTransition>();
         }
 
         /// <summary>
