@@ -11,9 +11,9 @@ namespace HTL.Transitioner.Loading
     #endregion
     public class LoadingDisposable : IDisposable
     {
-        ITransition loadingScreen;
+        AbstractTransition loadingScreen;
 
-        public LoadingDisposable(ITransition loadingScreen)
+        public LoadingDisposable(AbstractTransition loadingScreen)
         {
             this.loadingScreen = loadingScreen;
         }

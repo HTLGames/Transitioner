@@ -2,11 +2,9 @@ using UnityEngine;
 
 namespace HTL.Transitioner
 {
-    public abstract class AbstractTransition : MonoBehaviour, ITransition
+    public abstract class AbstractTransition : MonoBehaviour
     {
         [SerializeField] private bool resetAnimationOnPlay = true;
-
-        bool ITransition.resetAnimationOnPlay => resetAnimationOnPlay;
 
         #region Docs
         /// <summary>
@@ -32,7 +30,7 @@ namespace HTL.Transitioner
         /// </summary>
         /// <param name="show">True to show the object, false to hide.</param>
         #endregion
-        void ITransition.Play(bool show)
+        public void Play(bool show)
         {
             PlayAsync(show).GetAwaiter();
         }
@@ -96,10 +94,5 @@ namespace HTL.Transitioner
         /// </summary>
         /// <returns></returns>
         protected abstract Awaitable Show();
-
-        async Awaitable ITransition.Show() => await Show();
-        async Awaitable ITransition.Hide() => await Hide();
-        void ITransition.SetVisible() => SetVisible();
-        void ITransition.SetHidden() => SetHidden();
     }
 }
